@@ -7,12 +7,12 @@
 
 ## Deskripsi Singkat
 
-Proyek ini adalah website portofolio yang dibuat menggunakan Django, yang terdiri dari dua halaman utama: My Home dan My About.
+Proyek ini membuat django app serta membuat model pengguna dan model berita
 
 ## Ada apa saja di website ini
 
-1. My Home: Halaman utama yang menampilkan informasi portofolio.
-2. My About: Halaman tentang yang memberikan detail lebih lanjut tentang pembuat portofolio
+1. Membuat models pengguna
+2. Membuat models berita
 
 # Cara menjalankan project
 
@@ -22,26 +22,24 @@ Proyek ini adalah website portofolio yang dibuat menggunakan Django, yang terdir
 git clone https://github.com/dimaseffendy/2311102441263_MUHAMMAD-DHIMAS-DINNIS-EFFENDY_DJANGO.git
 ```
 
-2. Membuat home
+2. buat app
 
 ```
-home.html
+django-admin startapp pengguna
+```
+```
+django-admin startapp berita
 ```
 
-3. Membuat about
+3. lakukan migrate
 
 ```
-about.html
+py manage.py migrate
 ```
 
-4. untuk melihat halaman my home
+4. lakukan makemigrations
 
 ```
-http://127.0.0.1:8000/
+py manage.py makemigrations
 ```
 
-5.  untuk melihat halaman my about
-
-```
-http://127.0.0.1:8000/about/
-```
