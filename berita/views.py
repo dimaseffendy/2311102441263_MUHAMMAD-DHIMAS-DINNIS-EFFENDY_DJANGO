@@ -125,3 +125,4 @@ def artikel_delete(request, id_artikel):
         Artikel.objects.get(id=id_artikel).delete()
     except:pass
     return redirect(artikel_list)
+
