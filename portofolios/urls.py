@@ -19,6 +19,8 @@ urlpatterns = [
     path('autentifikasi/akun_login', akun_login, name="akun_login"),
     path('autentifikasi/akun_register', akun_register, name="akun_register"),
     path('autentifikasi/login', user_logout, name="user_logout"),
+    
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 if settings.DEBUG: 
